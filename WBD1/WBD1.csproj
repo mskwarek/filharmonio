@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Security">
-      <HintPath>..\..\..\..\..\Downloads\Npgsql-2.2.3-net45\Mono.Security.dll</HintPath>
+      <HintPath>..\..\..\lib\npgsql\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql">
-      <HintPath>..\..\..\..\..\Downloads\Npgsql-2.2.3-net45\Npgsql.dll</HintPath>
+      <HintPath>..\..\..\lib\npgsql\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql.EntityFramework">
       <HintPath>..\..\..\..\..\Downloads\Npgsql-2.2.3-net45\Npgsql.EntityFramework.dll</HintPath>
@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="applicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="applicationForm.Designer.cs">
+      <DependentUpon>applicationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="PsqlManager.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="TransactionManager.cs" />
+    <EmbeddedResource Include="applicationForm.resx">
+      <DependentUpon>applicationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

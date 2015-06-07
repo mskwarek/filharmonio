@@ -8,6 +8,8 @@ namespace WBD1
 {
     static class Program
     {
+        public static applicationForm app;
+        static Form1 logg;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,11 @@ namespace WBD1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            logg = new Form1();
+            logg.ShowDialog();
+            //logg.Close();
+            //Application.Exit();
+            Application.Run(app);
         }
     }
 }
