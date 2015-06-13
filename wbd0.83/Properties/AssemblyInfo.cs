@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WBD1")]
+[assembly: AssemblyTitle("wbd0.83")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WBD1")]
+[assembly: AssemblyProduct("wbd0.83")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4bf7a9da-f2b9-4efc-b98f-fabdc0cbf1c2")]
+[assembly: Guid("480b9f90-8c6b-439f-ab5d-2a8ed528449b")]
 
 // Version information for an assembly consists of the following four values:
 //
