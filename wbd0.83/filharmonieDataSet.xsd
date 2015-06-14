@@ -12,19 +12,240 @@
   <xs:element name="filharmonieDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="filharmonieDataSet" msprop:Generator_UserDSName="filharmonieDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Poczty" msprop:Generator_TableClassName="PocztyDataTable" msprop:Generator_TableVarName="tablePoczty" msprop:Generator_TablePropName="Poczty" msprop:Generator_RowDeletingName="PocztyRowDeleting" msprop:Generator_RowChangingName="PocztyRowChanging" msprop:Generator_RowEvHandlerName="PocztyRowChangeEventHandler" msprop:Generator_RowDeletedName="PocztyRowDeleted" msprop:Generator_UserTableName="Poczty" msprop:Generator_RowChangedName="PocztyRowChanged" msprop:Generator_RowEvArgName="PocztyRowChangeEvent" msprop:Generator_RowClassName="PocztyRow">
+        <xs:element name="poczty" msprop:Generator_TableClassName="pocztyDataTable" msprop:Generator_TableVarName="tablepoczty" msprop:Generator_RowChangedName="pocztyRowChanged" msprop:Generator_TablePropName="poczty" msprop:Generator_RowDeletingName="pocztyRowDeleting" msprop:Generator_RowChangingName="pocztyRowChanging" msprop:Generator_RowEvHandlerName="pocztyRowChangeEventHandler" msprop:Generator_RowDeletedName="pocztyRowDeleted" msprop:Generator_RowClassName="pocztyRow" msprop:Generator_UserTableName="poczty" msprop:Generator_RowEvArgName="pocztyRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
-              <xs:element name="Miejscowosc" msprop:Generator_ColumnVarNameInTable="columnMiejscowosc" msprop:Generator_ColumnPropNameInRow="Miejscowosc" msprop:Generator_ColumnPropNameInTable="MiejscowoscColumn" msprop:Generator_UserColumnName="Miejscowosc" type="xs:string" minOccurs="0" />
+              <xs:element name="poczta_id" msprop:Generator_ColumnVarNameInTable="columnpoczta_id" msprop:Generator_ColumnPropNameInRow="poczta_id" msprop:Generator_ColumnPropNameInTable="poczta_idColumn" msprop:Generator_UserColumnName="poczta_id" type="xs:int" minOccurs="0" />
+              <xs:element name="kod_pocztowy" msprop:Generator_ColumnVarNameInTable="columnkod_pocztowy" msprop:Generator_ColumnPropNameInRow="kod_pocztowy" msprop:Generator_ColumnPropNameInTable="kod_pocztowyColumn" msprop:Generator_UserColumnName="kod_pocztowy" type="xs:decimal" minOccurs="0" />
+              <xs:element name="miejscowosc" msprop:Generator_ColumnVarNameInTable="columnmiejscowosc" msprop:Generator_ColumnPropNameInRow="miejscowosc" msprop:Generator_ColumnPropNameInTable="miejscowoscColumn" msprop:Generator_UserColumnName="miejscowosc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pracownicy" msprop:Generator_TableClassName="pracownicyDataTable" msprop:Generator_TableVarName="tablepracownicy" msprop:Generator_TablePropName="pracownicy" msprop:Generator_RowDeletingName="pracownicyRowDeleting" msprop:Generator_RowChangingName="pracownicyRowChanging" msprop:Generator_RowEvHandlerName="pracownicyRowChangeEventHandler" msprop:Generator_RowDeletedName="pracownicyRowDeleted" msprop:Generator_UserTableName="pracownicy" msprop:Generator_RowChangedName="pracownicyRowChanged" msprop:Generator_RowEvArgName="pracownicyRowChangeEvent" msprop:Generator_RowClassName="pracownicyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="pesel" msprop:Generator_ColumnVarNameInTable="columnpesel" msprop:Generator_ColumnPropNameInRow="pesel" msprop:Generator_ColumnPropNameInTable="peselColumn" msprop:Generator_UserColumnName="pesel" type="xs:decimal" minOccurs="0" />
+              <xs:element name="imie" msprop:Generator_ColumnVarNameInTable="columnimie" msprop:Generator_ColumnPropNameInRow="imie" msprop:Generator_ColumnPropNameInTable="imieColumn" msprop:Generator_UserColumnName="imie" type="xs:string" minOccurs="0" />
+              <xs:element name="nazwisko" msprop:Generator_ColumnVarNameInTable="columnnazwisko" msprop:Generator_ColumnPropNameInRow="nazwisko" msprop:Generator_ColumnPropNameInTable="nazwiskoColumn" msprop:Generator_UserColumnName="nazwisko" type="xs:string" minOccurs="0" />
+              <xs:element name="numer_konta" msprop:Generator_ColumnVarNameInTable="columnnumer_konta" msprop:Generator_ColumnPropNameInRow="numer_konta" msprop:Generator_ColumnPropNameInTable="numer_kontaColumn" msprop:Generator_UserColumnName="numer_konta" type="xs:decimal" minOccurs="0" />
+              <xs:element name="filharmonia_id" msprop:Generator_ColumnVarNameInTable="columnfilharmonia_id" msprop:Generator_ColumnPropNameInRow="filharmonia_id" msprop:Generator_ColumnPropNameInTable="filharmonia_idColumn" msprop:Generator_UserColumnName="filharmonia_id" type="xs:int" minOccurs="0" />
+              <xs:element name="poczta_id" msprop:Generator_ColumnVarNameInTable="columnpoczta_id" msprop:Generator_ColumnPropNameInRow="poczta_id" msprop:Generator_ColumnPropNameInTable="poczta_idColumn" msprop:Generator_UserColumnName="poczta_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="atrakcje_koncertowe" msprop:Generator_TableClassName="atrakcje_koncertoweDataTable" msprop:Generator_TableVarName="tableatrakcje_koncertowe" msprop:Generator_TablePropName="atrakcje_koncertowe" msprop:Generator_RowDeletingName="atrakcje_koncertoweRowDeleting" msprop:Generator_RowChangingName="atrakcje_koncertoweRowChanging" msprop:Generator_RowEvHandlerName="atrakcje_koncertoweRowChangeEventHandler" msprop:Generator_RowDeletedName="atrakcje_koncertoweRowDeleted" msprop:Generator_UserTableName="atrakcje_koncertowe" msprop:Generator_RowChangedName="atrakcje_koncertoweRowChanged" msprop:Generator_RowEvArgName="atrakcje_koncertoweRowChangeEvent" msprop:Generator_RowClassName="atrakcje_koncertoweRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="atrakcja_id" msprop:Generator_ColumnVarNameInTable="columnatrakcja_id" msprop:Generator_ColumnPropNameInRow="atrakcja_id" msprop:Generator_ColumnPropNameInTable="atrakcja_idColumn" msprop:Generator_UserColumnName="atrakcja_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nazwa" msprop:Generator_ColumnVarNameInTable="columnnazwa" msprop:Generator_ColumnPropNameInRow="nazwa" msprop:Generator_ColumnPropNameInTable="nazwaColumn" msprop:Generator_UserColumnName="nazwa" type="xs:string" minOccurs="0" />
+              <xs:element name="koncert_id" msprop:Generator_ColumnVarNameInTable="columnkoncert_id" msprop:Generator_ColumnPropNameInRow="koncert_id" msprop:Generator_ColumnPropNameInTable="koncert_idColumn" msprop:Generator_UserColumnName="koncert_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="bilety" msprop:Generator_TableClassName="biletyDataTable" msprop:Generator_TableVarName="tablebilety" msprop:Generator_TablePropName="bilety" msprop:Generator_RowDeletingName="biletyRowDeleting" msprop:Generator_RowChangingName="biletyRowChanging" msprop:Generator_RowEvHandlerName="biletyRowChangeEventHandler" msprop:Generator_RowDeletedName="biletyRowDeleted" msprop:Generator_UserTableName="bilety" msprop:Generator_RowChangedName="biletyRowChanged" msprop:Generator_RowEvArgName="biletyRowChangeEvent" msprop:Generator_RowClassName="biletyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bilet_id" msprop:Generator_ColumnVarNameInTable="columnbilet_id" msprop:Generator_ColumnPropNameInRow="bilet_id" msprop:Generator_ColumnPropNameInTable="bilet_idColumn" msprop:Generator_UserColumnName="bilet_id" type="xs:int" minOccurs="0" />
+              <xs:element name="cena" msprop:Generator_ColumnVarNameInTable="columncena" msprop:Generator_ColumnPropNameInRow="cena" msprop:Generator_ColumnPropNameInTable="cenaColumn" msprop:Generator_UserColumnName="cena" type="xs:string" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+              <xs:element name="numer_miejsca" msprop:Generator_ColumnVarNameInTable="columnnumer_miejsca" msprop:Generator_ColumnPropNameInRow="numer_miejsca" msprop:Generator_ColumnPropNameInTable="numer_miejscaColumn" msprop:Generator_UserColumnName="numer_miejsca" type="xs:int" minOccurs="0" />
+              <xs:element name="klient_id" msprop:Generator_ColumnVarNameInTable="columnklient_id" msprop:Generator_ColumnPropNameInRow="klient_id" msprop:Generator_ColumnPropNameInTable="klient_idColumn" msprop:Generator_UserColumnName="klient_id" type="xs:int" minOccurs="0" />
+              <xs:element name="realizacja_id" msprop:Generator_ColumnVarNameInTable="columnrealizacja_id" msprop:Generator_ColumnPropNameInRow="realizacja_id" msprop:Generator_ColumnPropNameInTable="realizacja_idColumn" msprop:Generator_UserColumnName="realizacja_id" type="xs:int" minOccurs="0" />
+              <xs:element name="koncert_id" msprop:Generator_ColumnVarNameInTable="columnkoncert_id" msprop:Generator_ColumnPropNameInRow="koncert_id" msprop:Generator_ColumnPropNameInTable="koncert_idColumn" msprop:Generator_UserColumnName="koncert_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="filharmonie" msprop:Generator_TableClassName="filharmonieDataTable" msprop:Generator_TableVarName="tablefilharmonie" msprop:Generator_TablePropName="filharmonie" msprop:Generator_RowDeletingName="filharmonieRowDeleting" msprop:Generator_RowChangingName="filharmonieRowChanging" msprop:Generator_RowEvHandlerName="filharmonieRowChangeEventHandler" msprop:Generator_RowDeletedName="filharmonieRowDeleted" msprop:Generator_UserTableName="filharmonie" msprop:Generator_RowChangedName="filharmonieRowChanged" msprop:Generator_RowEvArgName="filharmonieRowChangeEvent" msprop:Generator_RowClassName="filharmonieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="filharmonia_id" msprop:Generator_ColumnVarNameInTable="columnfilharmonia_id" msprop:Generator_ColumnPropNameInRow="filharmonia_id" msprop:Generator_ColumnPropNameInTable="filharmonia_idColumn" msprop:Generator_UserColumnName="filharmonia_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nazwa" msprop:Generator_ColumnVarNameInTable="columnnazwa" msprop:Generator_ColumnPropNameInRow="nazwa" msprop:Generator_ColumnPropNameInTable="nazwaColumn" msprop:Generator_UserColumnName="nazwa" type="xs:string" minOccurs="0" />
+              <xs:element name="data_otworzenia" msprop:Generator_ColumnVarNameInTable="columndata_otworzenia" msprop:Generator_ColumnPropNameInRow="data_otworzenia" msprop:Generator_ColumnPropNameInTable="data_otworzeniaColumn" msprop:Generator_UserColumnName="data_otworzenia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="imie_dyrektora" msprop:Generator_ColumnVarNameInTable="columnimie_dyrektora" msprop:Generator_ColumnPropNameInRow="imie_dyrektora" msprop:Generator_ColumnPropNameInTable="imie_dyrektoraColumn" msprop:Generator_UserColumnName="imie_dyrektora" type="xs:string" minOccurs="0" />
+              <xs:element name="nazwisko_dyrektora" msprop:Generator_ColumnVarNameInTable="columnnazwisko_dyrektora" msprop:Generator_ColumnPropNameInRow="nazwisko_dyrektora" msprop:Generator_ColumnPropNameInTable="nazwisko_dyrektoraColumn" msprop:Generator_UserColumnName="nazwisko_dyrektora" type="xs:string" minOccurs="0" />
+              <xs:element name="ulica" msprop:Generator_ColumnVarNameInTable="columnulica" msprop:Generator_ColumnPropNameInRow="ulica" msprop:Generator_ColumnPropNameInTable="ulicaColumn" msprop:Generator_UserColumnName="ulica" type="xs:string" minOccurs="0" />
+              <xs:element name="numer_lokalu" msprop:Generator_ColumnVarNameInTable="columnnumer_lokalu" msprop:Generator_ColumnPropNameInRow="numer_lokalu" msprop:Generator_ColumnPropNameInTable="numer_lokaluColumn" msprop:Generator_UserColumnName="numer_lokalu" type="xs:string" minOccurs="0" />
+              <xs:element name="nip" msprop:Generator_ColumnVarNameInTable="columnnip" msprop:Generator_ColumnPropNameInRow="nip" msprop:Generator_ColumnPropNameInTable="nipColumn" msprop:Generator_UserColumnName="nip" type="xs:decimal" minOccurs="0" />
+              <xs:element name="regon" msprop:Generator_ColumnVarNameInTable="columnregon" msprop:Generator_ColumnPropNameInRow="regon" msprop:Generator_ColumnPropNameInTable="regonColumn" msprop:Generator_UserColumnName="regon" type="xs:decimal" minOccurs="0" />
+              <xs:element name="poczta_id" msprop:Generator_ColumnVarNameInTable="columnpoczta_id" msprop:Generator_ColumnPropNameInRow="poczta_id" msprop:Generator_ColumnPropNameInTable="poczta_idColumn" msprop:Generator_UserColumnName="poczta_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instrument_do_muzyka" msprop:Generator_TableClassName="instrument_do_muzykaDataTable" msprop:Generator_TableVarName="tableinstrument_do_muzyka" msprop:Generator_TablePropName="instrument_do_muzyka" msprop:Generator_RowDeletingName="instrument_do_muzykaRowDeleting" msprop:Generator_RowChangingName="instrument_do_muzykaRowChanging" msprop:Generator_RowEvHandlerName="instrument_do_muzykaRowChangeEventHandler" msprop:Generator_RowDeletedName="instrument_do_muzykaRowDeleted" msprop:Generator_UserTableName="instrument_do_muzyka" msprop:Generator_RowChangedName="instrument_do_muzykaRowChanged" msprop:Generator_RowEvArgName="instrument_do_muzykaRowChangeEvent" msprop:Generator_RowClassName="instrument_do_muzykaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="instrument_id" msprop:Generator_ColumnVarNameInTable="columninstrument_id" msprop:Generator_ColumnPropNameInRow="instrument_id" msprop:Generator_ColumnPropNameInTable="instrument_idColumn" msprop:Generator_UserColumnName="instrument_id" type="xs:int" minOccurs="0" />
+              <xs:element name="stopien_zaawansowania" msprop:Generator_ColumnVarNameInTable="columnstopien_zaawansowania" msprop:Generator_ColumnPropNameInRow="stopien_zaawansowania" msprop:Generator_ColumnPropNameInTable="stopien_zaawansowaniaColumn" msprop:Generator_UserColumnName="stopien_zaawansowania" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instrumenty_specjalizacje" msprop:Generator_TableClassName="instrumenty_specjalizacjeDataTable" msprop:Generator_TableVarName="tableinstrumenty_specjalizacje" msprop:Generator_TablePropName="instrumenty_specjalizacje" msprop:Generator_RowDeletingName="instrumenty_specjalizacjeRowDeleting" msprop:Generator_RowChangingName="instrumenty_specjalizacjeRowChanging" msprop:Generator_RowEvHandlerName="instrumenty_specjalizacjeRowChangeEventHandler" msprop:Generator_RowDeletedName="instrumenty_specjalizacjeRowDeleted" msprop:Generator_UserTableName="instrumenty_specjalizacje" msprop:Generator_RowChangedName="instrumenty_specjalizacjeRowChanged" msprop:Generator_RowEvArgName="instrumenty_specjalizacjeRowChangeEvent" msprop:Generator_RowClassName="instrumenty_specjalizacjeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="instrument_id" msprop:Generator_ColumnVarNameInTable="columninstrument_id" msprop:Generator_ColumnPropNameInRow="instrument_id" msprop:Generator_ColumnPropNameInTable="instrument_idColumn" msprop:Generator_UserColumnName="instrument_id" type="xs:int" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+              <xs:element name="instrument" msprop:Generator_ColumnVarNameInTable="columninstrument" msprop:Generator_ColumnPropNameInRow="instrument" msprop:Generator_ColumnPropNameInTable="instrumentColumn" msprop:Generator_UserColumnName="instrument" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="klienci" msprop:Generator_TableClassName="klienciDataTable" msprop:Generator_TableVarName="tableklienci" msprop:Generator_TablePropName="klienci" msprop:Generator_RowDeletingName="klienciRowDeleting" msprop:Generator_RowChangingName="klienciRowChanging" msprop:Generator_RowEvHandlerName="klienciRowChangeEventHandler" msprop:Generator_RowDeletedName="klienciRowDeleted" msprop:Generator_UserTableName="klienci" msprop:Generator_RowChangedName="klienciRowChanged" msprop:Generator_RowEvArgName="klienciRowChangeEvent" msprop:Generator_RowClassName="klienciRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="klient_id" msprop:Generator_ColumnVarNameInTable="columnklient_id" msprop:Generator_ColumnPropNameInRow="klient_id" msprop:Generator_ColumnPropNameInTable="klient_idColumn" msprop:Generator_UserColumnName="klient_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nazwisko" msprop:Generator_ColumnVarNameInTable="columnnazwisko" msprop:Generator_ColumnPropNameInRow="nazwisko" msprop:Generator_ColumnPropNameInTable="nazwiskoColumn" msprop:Generator_UserColumnName="nazwisko" type="xs:string" minOccurs="0" />
+              <xs:element name="imie" msprop:Generator_ColumnVarNameInTable="columnimie" msprop:Generator_ColumnPropNameInRow="imie" msprop:Generator_ColumnPropNameInTable="imieColumn" msprop:Generator_UserColumnName="imie" type="xs:string" minOccurs="0" />
+              <xs:element name="mail" msprop:Generator_ColumnVarNameInTable="columnmail" msprop:Generator_ColumnPropNameInRow="mail" msprop:Generator_ColumnPropNameInTable="mailColumn" msprop:Generator_UserColumnName="mail" type="xs:string" minOccurs="0" />
+              <xs:element name="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" msprop:Generator_UserColumnName="telefon" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="koncerty" msprop:Generator_TableClassName="koncertyDataTable" msprop:Generator_TableVarName="tablekoncerty" msprop:Generator_TablePropName="koncerty" msprop:Generator_RowDeletingName="koncertyRowDeleting" msprop:Generator_RowChangingName="koncertyRowChanging" msprop:Generator_RowEvHandlerName="koncertyRowChangeEventHandler" msprop:Generator_RowDeletedName="koncertyRowDeleted" msprop:Generator_UserTableName="koncerty" msprop:Generator_RowChangedName="koncertyRowChanged" msprop:Generator_RowEvArgName="koncertyRowChangeEvent" msprop:Generator_RowClassName="koncertyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="koncert_id" msprop:Generator_ColumnVarNameInTable="columnkoncert_id" msprop:Generator_ColumnPropNameInRow="koncert_id" msprop:Generator_ColumnPropNameInTable="koncert_idColumn" msprop:Generator_UserColumnName="koncert_id" type="xs:int" minOccurs="0" />
+              <xs:element name="tytul" msprop:Generator_ColumnVarNameInTable="columntytul" msprop:Generator_ColumnPropNameInRow="tytul" msprop:Generator_ColumnPropNameInTable="tytulColumn" msprop:Generator_UserColumnName="tytul" type="xs:string" minOccurs="0" />
+              <xs:element name="opis" msprop:Generator_ColumnVarNameInTable="columnopis" msprop:Generator_ColumnPropNameInRow="opis" msprop:Generator_ColumnPropNameInTable="opisColumn" msprop:Generator_UserColumnName="opis" type="xs:string" minOccurs="0" />
+              <xs:element name="czas_trwania" msprop:Generator_ColumnVarNameInTable="columnczas_trwania" msprop:Generator_ColumnPropNameInRow="czas_trwania" msprop:Generator_ColumnPropNameInTable="czas_trwaniaColumn" msprop:Generator_UserColumnName="czas_trwania" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="muzycy" msprop:Generator_TableClassName="muzycyDataTable" msprop:Generator_TableVarName="tablemuzycy" msprop:Generator_TablePropName="muzycy" msprop:Generator_RowDeletingName="muzycyRowDeleting" msprop:Generator_RowChangingName="muzycyRowChanging" msprop:Generator_RowEvHandlerName="muzycyRowChangeEventHandler" msprop:Generator_RowDeletedName="muzycyRowDeleted" msprop:Generator_UserTableName="muzycy" msprop:Generator_RowChangedName="muzycyRowChanged" msprop:Generator_RowEvArgName="muzycyRowChangeEvent" msprop:Generator_RowClassName="muzycyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="obsady" msprop:Generator_TableClassName="obsadyDataTable" msprop:Generator_TableVarName="tableobsady" msprop:Generator_TablePropName="obsady" msprop:Generator_RowDeletingName="obsadyRowDeleting" msprop:Generator_RowChangingName="obsadyRowChanging" msprop:Generator_RowEvHandlerName="obsadyRowChangeEventHandler" msprop:Generator_RowDeletedName="obsadyRowDeleted" msprop:Generator_UserTableName="obsady" msprop:Generator_RowChangedName="obsadyRowChanged" msprop:Generator_RowEvArgName="obsadyRowChangeEvent" msprop:Generator_RowClassName="obsadyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="realizacja_id" msprop:Generator_ColumnVarNameInTable="columnrealizacja_id" msprop:Generator_ColumnPropNameInRow="realizacja_id" msprop:Generator_ColumnPropNameInTable="realizacja_idColumn" msprop:Generator_UserColumnName="realizacja_id" type="xs:int" minOccurs="0" />
+              <xs:element name="koncert_id" msprop:Generator_ColumnVarNameInTable="columnkoncert_id" msprop:Generator_ColumnPropNameInRow="koncert_id" msprop:Generator_ColumnPropNameInTable="koncert_idColumn" msprop:Generator_UserColumnName="koncert_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pracownicy_obslugi" msprop:Generator_TableClassName="pracownicy_obslugiDataTable" msprop:Generator_TableVarName="tablepracownicy_obslugi" msprop:Generator_TablePropName="pracownicy_obslugi" msprop:Generator_RowDeletingName="pracownicy_obslugiRowDeleting" msprop:Generator_RowChangingName="pracownicy_obslugiRowChanging" msprop:Generator_RowEvHandlerName="pracownicy_obslugiRowChangeEventHandler" msprop:Generator_RowDeletedName="pracownicy_obslugiRowDeleted" msprop:Generator_UserTableName="pracownicy_obslugi" msprop:Generator_RowChangedName="pracownicy_obslugiRowChanged" msprop:Generator_RowEvArgName="pracownicy_obslugiRowChangeEvent" msprop:Generator_RowClassName="pracownicy_obslugiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="wyposazenie" msprop:Generator_ColumnVarNameInTable="columnwyposazenie" msprop:Generator_ColumnPropNameInRow="wyposazenie" msprop:Generator_ColumnPropNameInTable="wyposazenieColumn" msprop:Generator_UserColumnName="wyposazenie" type="xs:string" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+              <xs:element name="stanowisko_id" msprop:Generator_ColumnVarNameInTable="columnstanowisko_id" msprop:Generator_ColumnPropNameInRow="stanowisko_id" msprop:Generator_ColumnPropNameInTable="stanowisko_idColumn" msprop:Generator_UserColumnName="stanowisko_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="realizacje_koncertow" msprop:Generator_TableClassName="realizacje_koncertowDataTable" msprop:Generator_TableVarName="tablerealizacje_koncertow" msprop:Generator_TablePropName="realizacje_koncertow" msprop:Generator_RowDeletingName="realizacje_koncertowRowDeleting" msprop:Generator_RowChangingName="realizacje_koncertowRowChanging" msprop:Generator_RowEvHandlerName="realizacje_koncertowRowChangeEventHandler" msprop:Generator_RowDeletedName="realizacje_koncertowRowDeleted" msprop:Generator_UserTableName="realizacje_koncertow" msprop:Generator_RowChangedName="realizacje_koncertowRowChanged" msprop:Generator_RowEvArgName="realizacje_koncertowRowChangeEvent" msprop:Generator_RowClassName="realizacje_koncertowRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="realizacja_id" msprop:Generator_ColumnVarNameInTable="columnrealizacja_id" msprop:Generator_ColumnPropNameInRow="realizacja_id" msprop:Generator_ColumnPropNameInTable="realizacja_idColumn" msprop:Generator_UserColumnName="realizacja_id" type="xs:int" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="godzina_rozpoczecia" msprop:Generator_ColumnVarNameInTable="columngodzina_rozpoczecia" msprop:Generator_ColumnPropNameInRow="godzina_rozpoczecia" msprop:Generator_ColumnPropNameInTable="godzina_rozpoczeciaColumn" msprop:Generator_UserColumnName="godzina_rozpoczecia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="godzina_zakonczenia" msprop:Generator_ColumnVarNameInTable="columngodzina_zakonczenia" msprop:Generator_ColumnPropNameInRow="godzina_zakonczenia" msprop:Generator_ColumnPropNameInTable="godzina_zakonczeniaColumn" msprop:Generator_UserColumnName="godzina_zakonczenia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+              <xs:element name="koncert_id" msprop:Generator_ColumnVarNameInTable="columnkoncert_id" msprop:Generator_ColumnPropNameInRow="koncert_id" msprop:Generator_ColumnPropNameInTable="koncert_idColumn" msprop:Generator_UserColumnName="koncert_id" type="xs:int" minOccurs="0" />
+              <xs:element name="sala_id" msprop:Generator_ColumnVarNameInTable="columnsala_id" msprop:Generator_ColumnPropNameInRow="sala_id" msprop:Generator_ColumnPropNameInTable="sala_idColumn" msprop:Generator_UserColumnName="sala_id" type="xs:int" minOccurs="0" />
+              <xs:element name="filharmonia_id" msprop:Generator_ColumnVarNameInTable="columnfilharmonia_id" msprop:Generator_ColumnPropNameInRow="filharmonia_id" msprop:Generator_ColumnPropNameInTable="filharmonia_idColumn" msprop:Generator_UserColumnName="filharmonia_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sale" msprop:Generator_TableClassName="saleDataTable" msprop:Generator_TableVarName="tablesale" msprop:Generator_TablePropName="sale" msprop:Generator_RowDeletingName="saleRowDeleting" msprop:Generator_RowChangingName="saleRowChanging" msprop:Generator_RowEvHandlerName="saleRowChangeEventHandler" msprop:Generator_RowDeletedName="saleRowDeleted" msprop:Generator_UserTableName="sale" msprop:Generator_RowChangedName="saleRowChanged" msprop:Generator_RowEvArgName="saleRowChangeEvent" msprop:Generator_RowClassName="saleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sala_id" msprop:Generator_ColumnVarNameInTable="columnsala_id" msprop:Generator_ColumnPropNameInRow="sala_id" msprop:Generator_ColumnPropNameInTable="sala_idColumn" msprop:Generator_UserColumnName="sala_id" type="xs:int" minOccurs="0" />
+              <xs:element name="liczba_miejsc" msprop:Generator_ColumnVarNameInTable="columnliczba_miejsc" msprop:Generator_ColumnPropNameInRow="liczba_miejsc" msprop:Generator_ColumnPropNameInTable="liczba_miejscColumn" msprop:Generator_UserColumnName="liczba_miejsc" type="xs:int" minOccurs="0" />
+              <xs:element name="opis_sali" msprop:Generator_ColumnVarNameInTable="columnopis_sali" msprop:Generator_ColumnPropNameInRow="opis_sali" msprop:Generator_ColumnPropNameInTable="opis_saliColumn" msprop:Generator_UserColumnName="opis_sali" type="xs:string" minOccurs="0" />
+              <xs:element name="uwagi" msprop:Generator_ColumnVarNameInTable="columnuwagi" msprop:Generator_ColumnPropNameInRow="uwagi" msprop:Generator_ColumnPropNameInTable="uwagiColumn" msprop:Generator_UserColumnName="uwagi" type="xs:string" minOccurs="0" />
+              <xs:element name="filharmonia_id" msprop:Generator_ColumnVarNameInTable="columnfilharmonia_id" msprop:Generator_ColumnPropNameInRow="filharmonia_id" msprop:Generator_ColumnPropNameInTable="filharmonia_idColumn" msprop:Generator_UserColumnName="filharmonia_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stanowiska" msprop:Generator_TableClassName="stanowiskaDataTable" msprop:Generator_TableVarName="tablestanowiska" msprop:Generator_TablePropName="stanowiska" msprop:Generator_RowDeletingName="stanowiskaRowDeleting" msprop:Generator_RowChangingName="stanowiskaRowChanging" msprop:Generator_RowEvHandlerName="stanowiskaRowChangeEventHandler" msprop:Generator_RowDeletedName="stanowiskaRowDeleted" msprop:Generator_UserTableName="stanowiska" msprop:Generator_RowChangedName="stanowiskaRowChanged" msprop:Generator_RowEvArgName="stanowiskaRowChangeEvent" msprop:Generator_RowClassName="stanowiskaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stanowisko_id" msprop:Generator_ColumnVarNameInTable="columnstanowisko_id" msprop:Generator_ColumnPropNameInRow="stanowisko_id" msprop:Generator_ColumnPropNameInTable="stanowisko_idColumn" msprop:Generator_UserColumnName="stanowisko_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nazwa" msprop:Generator_ColumnVarNameInTable="columnnazwa" msprop:Generator_ColumnPropNameInRow="nazwa" msprop:Generator_ColumnPropNameInTable="nazwaColumn" msprop:Generator_UserColumnName="nazwa" type="xs:string" minOccurs="0" />
+              <xs:element name="miejsce_pracy" msprop:Generator_ColumnVarNameInTable="columnmiejsce_pracy" msprop:Generator_ColumnPropNameInRow="miejsce_pracy" msprop:Generator_ColumnPropNameInTable="miejsce_pracyColumn" msprop:Generator_UserColumnName="miejsce_pracy" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wynagrodzenia" msprop:Generator_TableClassName="wynagrodzeniaDataTable" msprop:Generator_TableVarName="tablewynagrodzenia" msprop:Generator_TablePropName="wynagrodzenia" msprop:Generator_RowDeletingName="wynagrodzeniaRowDeleting" msprop:Generator_RowChangingName="wynagrodzeniaRowChanging" msprop:Generator_RowEvHandlerName="wynagrodzeniaRowChangeEventHandler" msprop:Generator_RowDeletedName="wynagrodzeniaRowDeleted" msprop:Generator_UserTableName="wynagrodzenia" msprop:Generator_RowChangedName="wynagrodzeniaRowChanged" msprop:Generator_RowEvArgName="wynagrodzeniaRowChangeEvent" msprop:Generator_RowClassName="wynagrodzeniaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wynagrodzenie_id" msprop:Generator_ColumnVarNameInTable="columnwynagrodzenie_id" msprop:Generator_ColumnPropNameInRow="wynagrodzenie_id" msprop:Generator_ColumnPropNameInTable="wynagrodzenie_idColumn" msprop:Generator_UserColumnName="wynagrodzenie_id" type="xs:int" minOccurs="0" />
+              <xs:element name="kwota" msprop:Generator_ColumnVarNameInTable="columnkwota" msprop:Generator_ColumnPropNameInRow="kwota" msprop:Generator_ColumnPropNameInTable="kwotaColumn" msprop:Generator_UserColumnName="kwota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="PocztyKey1">
-      <xs:selector xpath=".//mstns:Poczty" />
-      <xs:field xpath="mstns:ID" />
+      <xs:selector xpath=".//mstns:poczty" />
+      <xs:field xpath="mstns:poczta_id" />
+    </xs:unique>
+    <xs:unique name="PracownicyKey1">
+      <xs:selector xpath=".//mstns:pracownicy" />
+      <xs:field xpath="mstns:pracownik_id" />
+    </xs:unique>
+    <xs:unique name="atrakcje_koncertoweKey1">
+      <xs:selector xpath=".//mstns:atrakcje_koncertowe" />
+      <xs:field xpath="mstns:atrakcja_id" />
+    </xs:unique>
+    <xs:unique name="biletyKey1">
+      <xs:selector xpath=".//mstns:bilety" />
+      <xs:field xpath="mstns:bilet_id" />
+    </xs:unique>
+    <xs:unique name="filharmonieKey1">
+      <xs:selector xpath=".//mstns:filharmonie" />
+      <xs:field xpath="mstns:filharmonia_id" />
+    </xs:unique>
+    <xs:unique name="instrument_do_muzykaKey1">
+      <xs:selector xpath=".//mstns:instrument_do_muzyka" />
+      <xs:field xpath="mstns:pracownik_id" />
+    </xs:unique>
+    <xs:unique name="instrumenty_specjalizacjeKey1">
+      <xs:selector xpath=".//mstns:instrumenty_specjalizacje" />
+      <xs:field xpath="mstns:instrument_id" />
+    </xs:unique>
+    <xs:unique name="klienciKey1">
+      <xs:selector xpath=".//mstns:klienci" />
+      <xs:field xpath="mstns:klient_id" />
+    </xs:unique>
+    <xs:unique name="koncertyKey1">
+      <xs:selector xpath=".//mstns:koncerty" />
+      <xs:field xpath="mstns:koncert_id" />
+    </xs:unique>
+    <xs:unique name="muzycyKey1">
+      <xs:selector xpath=".//mstns:muzycy" />
+      <xs:field xpath="mstns:pracownik_id" />
+    </xs:unique>
+    <xs:unique name="obsadyKey1">
+      <xs:selector xpath=".//mstns:obsady" />
+      <xs:field xpath="mstns:pracownik_id" />
+    </xs:unique>
+    <xs:unique name="pracownicy_obslugiKey1">
+      <xs:selector xpath=".//mstns:pracownicy_obslugi" />
+      <xs:field xpath="mstns:pracownik_id" />
+    </xs:unique>
+    <xs:unique name="realizacje_koncertowKey1">
+      <xs:selector xpath=".//mstns:realizacje_koncertow" />
+      <xs:field xpath="mstns:realizacja_id" />
+    </xs:unique>
+    <xs:unique name="saleKey1">
+      <xs:selector xpath=".//mstns:sale" />
+      <xs:field xpath="mstns:sala_id" />
+    </xs:unique>
+    <xs:unique name="stanowiskaKey1">
+      <xs:selector xpath=".//mstns:stanowiska" />
+      <xs:field xpath="mstns:stanowisko_id" />
+    </xs:unique>
+    <xs:unique name="wynagrodzeniaKey1">
+      <xs:selector xpath=".//mstns:wynagrodzenia" />
+      <xs:field xpath="mstns:wynagrodzenie_id" />
     </xs:unique>
   </xs:element>
 </xs:schema>
