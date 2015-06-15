@@ -181,6 +181,17 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="wid_pracownicy_obslugi" msprop:Generator_TableClassName="wid_pracownicy_obslugiDataTable" msprop:Generator_TableVarName="tablewid_pracownicy_obslugi" msprop:Generator_TablePropName="wid_pracownicy_obslugi" msprop:Generator_RowDeletingName="wid_pracownicy_obslugiRowDeleting" msprop:Generator_RowChangingName="wid_pracownicy_obslugiRowChanging" msprop:Generator_RowEvHandlerName="wid_pracownicy_obslugiRowChangeEventHandler" msprop:Generator_RowDeletedName="wid_pracownicy_obslugiRowDeleted" msprop:Generator_UserTableName="wid_pracownicy_obslugi" msprop:Generator_RowChangedName="wid_pracownicy_obslugiRowChanged" msprop:Generator_RowEvArgName="wid_pracownicy_obslugiRowChangeEvent" msprop:Generator_RowClassName="wid_pracownicy_obslugiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pracownik_id" msprop:Generator_ColumnVarNameInTable="columnpracownik_id" msprop:Generator_ColumnPropNameInRow="pracownik_id" msprop:Generator_ColumnPropNameInTable="pracownik_idColumn" msprop:Generator_UserColumnName="pracownik_id" type="xs:int" minOccurs="0" />
+              <xs:element name="imie" msprop:Generator_ColumnVarNameInTable="columnimie" msprop:Generator_ColumnPropNameInRow="imie" msprop:Generator_ColumnPropNameInTable="imieColumn" msprop:Generator_UserColumnName="imie" type="xs:string" minOccurs="0" />
+              <xs:element name="nazwisko" msprop:Generator_ColumnVarNameInTable="columnnazwisko" msprop:Generator_ColumnPropNameInRow="nazwisko" msprop:Generator_ColumnPropNameInTable="nazwiskoColumn" msprop:Generator_UserColumnName="nazwisko" type="xs:string" minOccurs="0" />
+              <xs:element name="pesel" msprop:Generator_ColumnVarNameInTable="columnpesel" msprop:Generator_ColumnPropNameInRow="pesel" msprop:Generator_ColumnPropNameInTable="peselColumn" msprop:Generator_UserColumnName="pesel" type="xs:decimal" minOccurs="0" />
+              <xs:element name="wyposazenie" msprop:Generator_ColumnVarNameInTable="columnwyposazenie" msprop:Generator_ColumnPropNameInRow="wyposazenie" msprop:Generator_ColumnPropNameInTable="wyposazenieColumn" msprop:Generator_UserColumnName="wyposazenie" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="PocztyKey1">

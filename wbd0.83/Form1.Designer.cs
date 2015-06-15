@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.nawigacja = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.pracownicy = new DevExpress.XtraNavBar.NavBarItem();
+            this.pracownicy_obslugi = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
@@ -68,7 +68,7 @@
             this.navBarGroup4,
             this.navBarGroup5});
             this.nawigacja.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
-            this.pracownicy,
+            this.pracownicy_obslugi,
             this.navBarItem2});
             this.nawigacja.Location = new System.Drawing.Point(0, 49);
             this.nawigacja.Name = "nawigacja";
@@ -83,14 +83,14 @@
             this.navBarGroup1.Caption = "Filharmonie";
             this.navBarGroup1.Expanded = true;
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.pracownicy),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.pracownicy_obslugi),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2)});
             this.navBarGroup1.Name = "navBarGroup1";
             // 
-            // pracownicy
+            // pracownicy_obslugi
             // 
-            this.pracownicy.Caption = "Pracownicy";
-            this.pracownicy.Name = "pracownicy";
+            this.pracownicy_obslugi.Caption = "Pracownicy";
+            this.pracownicy_obslugi.Name = "pracownicy_obslugi";
             // 
             // navBarItem2
             // 
@@ -188,7 +188,6 @@
             this.tableView.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
             this.tableView.Location = new System.Drawing.Point(195, 49);
             this.tableView.Name = "tableView";
-            this.tableView.CloseButtonClick += tableView_CloseButtonClick;
             this.tableView.Size = new System.Drawing.Size(639, 526);
             this.tableView.TabIndex = 1;
             // 
@@ -243,7 +242,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraNavBar.NavBarItem pracownicy;
+        private DevExpress.XtraNavBar.NavBarItem pracownicy_obslugi;
         private DevExpress.XtraNavBar.NavBarItem navBarItem2;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup5;
         private DevExpress.XtraTab.XtraTabControl tableView;

@@ -33,20 +33,17 @@ namespace wbd0._83
                 string name = control.PressedLink.ItemName;
                 switch (name)
                 {
-                    case "pracownicy":
+                    case "pracownicy_obslugi":
                         var page = new DevExpress.XtraTab.XtraTabPage();
-                        page.Text = "Pracownicy";
+                        page.Text = "Pracownicy obslugi";
                         PracownicyObslugi uc = new PracownicyObslugi();
                         uc.Dock = DockStyle.Fill;
                         page.Controls.Add(uc);
-
-                        //connection.ExecuteQuery();
-                        //page.Con
-                        //page.
                         tableView.TabPages.Add(page);
                         this.tableView.SelectedTabPage = page;
                         przyciski = uc;
                         break;
+
                 }
             }
             //Console.WriteLine(this.nawigacja.SelectedLink.Caption);
